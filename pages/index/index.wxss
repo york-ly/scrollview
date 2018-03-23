@@ -1,0 +1,34 @@
+/**index.wxss**/
+scroll-view {
+    width: 100%;
+}
+.wrap {
+    display: flex;
+    flex-direction: row;
+    background: gray;
+    overflow: hidden;
+    padding:10rpx;
+}
+
+.imgwrap .img {
+    display: block;
+    width: 280rpx;
+    height:420rpx;
+}
+
+.text {
+    font-size:26rpx;
+    margin-left:30rpx;
+    line-height: 50rpx;
+}
+.baseline{
+    height:4rpx;
+    width: 100%;
+    background: black;
+    border-top:1rpx solid white;
+    border-bottom:1rpx solid white;
+}
+.container{
+    overflow: hidden;
+    min-height: 100%;
+}

@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+<!--垂直滚动，这里必须设置高度-->
+
+<scroll-view scroll-top="{{scrollTop}}" scroll-y="true" class="list" bindscrolltolower="loading
+             style="height:{{height}}px;" bindscrolltoupper="refresh" bindscroll="scroll">
+    <block wx:for="{{movies}}">
+        <view class="wrap">
+            <view class="imgwrap">
+                <image class="img" src="{{item.images.medium}}"/>
+            </view>
+            <view class="text">
+                <text class="title">{{item.text}}</text>
+            </view>
+        </view>
+        <view class="baseline"></view>
+    </block>
+
+</scroll-view>
+</view>
